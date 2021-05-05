@@ -17,9 +17,9 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            // $table->timestamp('email_verified_at')->nullable();//時間が入る email_verified_atはメール認証が行われた日付 nullable();は無くてもいい
             $table->string('password');
-            $table->rememberToken();
+            $table->rememberToken();//ログイン時に使う 自分のクッキーと一致してるかどうかを確かめる
             $table->timestamps();
         });
     }
