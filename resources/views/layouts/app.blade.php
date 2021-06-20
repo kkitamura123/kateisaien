@@ -23,7 +23,7 @@
              <hi><img class="logo" src="{{ asset('imges/logo.png') }}" alt="logo"></h1>で生成できる
         --}}
         </nav>
-         <h1><img class="logo" src="{{ asset('images/logo.png') }}" alt="logo"></h1>
+         
          <header>
              <h1><img src="images/logo1.png" alt=""></h1>
              <nav id="global_navi">
@@ -38,11 +38,13 @@
                     <li>{!! link_to_route('link', 'LINK', []) !!}</li>
                  </ul>
              </nav>
-             
          </header>
+         <h1><img class="logo" src="{{ asset('images/logo.png') }}" alt="logo"></h1>
+         {{--
          <div id="main_visual">
              <img src={{ asset('images/main_visual.jpg') }} alt="">
          </div>
+         --}}
         </header>
             <div class="conteiner">
             {{-- ナビゲーションバー --}}
