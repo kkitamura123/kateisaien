@@ -310,8 +310,12 @@ class PostsController extends Controller
     // public function gallery() {
     //     return view('gallery');
     // }
-    public function gallery() 
-    {
-        return view('gallery');
+    public function gallery(Request $request) 
+        {
+        $photos = Photo::all();
+        return view('gallery',['photos' => $photos]);
     }
+
+    
+    
 }

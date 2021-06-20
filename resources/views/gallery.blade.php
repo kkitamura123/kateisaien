@@ -7,12 +7,14 @@
         
 
         
-        <div class="list">
-        {{--
-        @foreach ($post->photos as $photo )
-                <img class="post_img" width="300" height="300" src="{{ $photo->photo_url }}" alt="">
-        @endforeach
-        --}}
+@foreach ($photos as $photo )
+    <div class="list">
+        <img src="{{ $photo->photo_url }}">
+        <h4>見出しを入れます</h4>
+        <p>説明を入れます</p>        
+    </div>
+@endforeach
+{{--
         <h4>見出しを入れる</h4>
         <p>説明を入れます</p>
         </div>
@@ -40,5 +42,6 @@
         <h4>見出しを入れます</h4>
         <p>説明を入れます</p>    
         </div>
+--}}
 </div>  
 @endsection
