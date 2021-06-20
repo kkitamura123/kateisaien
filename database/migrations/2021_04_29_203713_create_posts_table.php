@@ -16,7 +16,10 @@ class CreatePostsTable extends Migration
     public function up() 
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('id'); //数字が増えていく
+            // 投稿の番号のid
+            // photosテーブルのpost_idに投稿の番号(postsテーブルと同じ情報)を指定することで
+            // 各photoがどのpostと関係しているかの保存
+            $table->bigIncrements('id'); //自動連番
             $table->unsignedBigInteger('user_id');// unsgined符号なし 負の数はなく正の数のみ つまり0以上　BigIntegerは桁の大きい整数型
             $table->longText('content');//投稿本文の保存先としてcontentカラムをlongText型で作成
             $table->string('title');//タイトルの保存先としてVARCHAR型で作成す(varchar255なので225文字まで保存)

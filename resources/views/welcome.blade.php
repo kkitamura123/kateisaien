@@ -47,7 +47,7 @@
         /* 重複部分は省略して良い */
         padding: 15px 30px;
         /* テキストのデザインを初期化する */
-        text-decoration: nane;
+        text-decoration: none;
         color: #666;
     }
     /* 擬似クラス */
@@ -67,14 +67,45 @@
 </head>
 </html>
 <body>
+    
     <header>
     <h1><img class="logo" src="images/logo.png" alt="logo"></h1>
-    </header>
-</body>
-<nav>
+    <nav>
     <ul>
-    <li><a href="#">ホーム</a></li>
-    <li><a href="#">投稿一覧</a></li>
-    <li><a href="#">About</a></li>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">投稿一覧</a></li>
+        <li><a href="#">About</a></li>
     </ul>
-</nav>
+    </nav>
+    </header>
+    <div class="col-xs-6 col-xs-offset-3">
+    <div class="form">
+        <div style="padding: 10px; margin-bottom: 20px; border: 1px solid #333333;">
+        <div class="form-title">会員ログイン</div>
+        <form action="#" method="post">
+        <label>ログインID</label>
+            <input type="text" name="email">
+            <br>
+            パスワード
+            <input type="text" name="password">
+            <br>
+            <input type="submit" value="ログイン">
+        </form>
+        </div>
+
+        <form>
+            <!---->
+            <label for="name">名前</label>
+            <!--labelが出力の名前-->
+            <input type="text" id="name">
+            <br>
+            <ladel for="email">メールアドレス</ladel>
+            <input type="text" id="email">
+        </form>
+
+    </div>
+    </div>
+    <div>
+        <input type="submit" value="新規会員登録">
+    </div>
+</body>

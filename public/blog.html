@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/CSS/kateisaien.css">
+</head>
+</html>
+<header>
+    <h1><img src="images/logo1.png" alt=""></h1>
+    <nav id="global_navi">
+        <ul>
+            <li class="current"><a href="/">HOME</a></li>
+            <li><a href="blog.html">記事投稿</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">ギャラリー</a></li>
+            <li><a href="link.html">リンク</a></li>
+            <li><a href="form.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="contents">
+<h2>新しい記事を投稿する (ここはblog.htmlです)</h2>
+<li>新しい記事を投稿</li>
+<li>自分の投稿</li>
+<button type="buttom" onclick=location.href="/">新しい記事を投稿する</button><br>
+<button type="buttom" onclick=location.href="/">自分の投稿を見る</button>
+</div>
+
+
+<form>
+    <p>タイトル：<br><input type="text"></p>
+    <p>本文：<br><textarea name="text" cols="50" row="10"></textarea></p>
+    <p><input type="submit" value="登録"></p>
+</form>
+
+
+ここにcreate.blade.phpを置きたい
+
+{!! link_to_route('posts.create','新規記事の投稿',[],['class' => 'btn btn-primary']) !!}
+
+
+<footer>
+     <div id="footer_navi">
+         <ul>
+             <li class="current"><a href="/">HOME</a></li>
+             <li><a href="/">講座案内</a></li>
+             <li><a href="/">レッスン</a></li>
+             <li><a href="/">ギャラリー</a></li>
+             <li><a href="/">アクセス</a></li>
+             <li><a href="/">お問い合わせ</a></li>
+         </ul>
+     </div>
+     <small>&copy;2018 TechAcademy KITCHEN.</small>
+</footer>

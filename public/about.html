@@ -1,0 +1,106 @@
+@extends('layouts.app')
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/CSS/kateisaien.css">
+</head>
+</html>
+
+
+
+<header>
+    <h1><img src="images/logo1.png" alt=""></h1>
+    <nav id="global_navi">
+        <ul>
+            <li class="current"><a href="/">HOME</a></li>
+            <li><a href="{!! link_to_route('posts.create','記事投稿',[]) !!}">記事投稿</a></li>     
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">ギャラリー</a></li>
+            <li><a href="link.html">リンク</a></li>
+            <li><a href="form.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="main_visual">
+    <img src="images/main_visual.jpg" alt="">
+</div>
+<style>
+/* about.html */
+/* コンテンツのh2タブの設定*/
+#contents h2{
+    clear:both; /* both 左寄せ */
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 8px 20px; /* 上下 左右への余白 */
+    background: #d08047;/* 背景色 */
+    border-radius: 10px; /*角を丸くする指定。この１行を削除すれば角丸がなくなる。*/
+}
+#contents h3 {
+    clear: both;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+</style>
+
+
+
+<div id="contents">
+<section>
+    <h1>ここからAboutページ</h1>
+     <section>
+     <h2>About</h2>
+     <p>このサイトの説明ページ</p>
+     
+    <h2>tableサンプル</h2>
+    <table class="ta1">    
+    <caption>見出しが必要であればここを使用</caption>    
+    <tr>
+    <th>見出し</th>
+    <td>ここに説明を入れる</td>
+    </tr>
+     <tr>
+    <th>見出し</th>
+    <td>ここに説明を入れる</td>
+    </tr>
+    <tr>
+    <th>見出し</th>
+    <td>ここに説明を入れる</td>
+    </tr>
+    </table>
+</section>
+
+
+<section id="about">
+<h2>当サイトについて</h2>
+<h3>サンプル</h3>
+<p>サンプルテストサンプルテスト</p>
+
+    <h2>当家庭菜園ホームページについて</h2>
+    <p>当ホームページは家庭菜園の楽しさを共有するサイトです</p>   
+    <h3></h3>
+</section>
+</div>
+
+<footer>
+     <div id="footer_navi">
+         <ul>
+             <li class="current"><a href="/">HOME</a></li>
+             <li><a href="/">講座案内</a></li>
+             <li><a href="/">レッスン</a></li>
+             <li><a href="/">ギャラリー</a></li>
+             <li><a href="/">アクセス</a></li>
+             <li><a href="/">お問い合わせ</a></li>
+         </ul>
+     </div>
+     <small>&copy;2018 TechAcademy KITCHEN.</small>
+</footer>

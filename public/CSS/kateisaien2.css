@@ -1,0 +1,56 @@
+
+        /*中央揃えtext-alignプロパティ  */
+        header{
+            text-align: center;
+        }
+        
+        img{
+            /*はみ出さないためのプロパティ/widthは横幅を示す  */
+            /* max-widthは横幅の最大値を指定している */
+            /* 画面がどれだけ小さくなっても個別の画面の幅を最大値にする */
+            /* 画面をはみ出さない */
+            max-width: 100%;
+        }   
+        /* クラスを指定する際はドットから始める */
+        .logo{
+        width: 1280px;
+        height:568px;
+        margin: 30px auto;
+        }
+        /* navタブの中のulタブ中のliタグ/指定してる場所がわかりやすくなる */
+        /* navの外側にあるliタグは影響を受けない */
+        nav ul li{
+            /* ・が消える */
+            list-style: nane;
+            /* 横並びにする */
+            display: inline;
+        }
+        nav{
+            /* navタブを中央に揃える */
+            text-align: center;
+            /* ナビバーと「お知らせ」の余白を開かせる */
+            margin-bottom: 30px;
+        }
+        nav li a{
+            /* paddingは内側の余白 */
+            /* padding: 15px 30px 15px 30pxの省略形がpadding: 15px 30x;  */
+            /* padding: 上　右　下　左 */
+            /* 重複部分は省略して良い */
+            padding: 15px 30px;
+            /* テキストのデザインを初期化する */
+            text-decoration: none;
+            color: #666;
+        }
+        /* 擬似クラス */
+        /* nav li a:hoverのコロンは忘れない */
+        nav li a:hover{
+        /* 下線を入れる */
+        /* 4px=線の太さ　solid=線の種類 */
+        /* 指定する順番は関係なし */
+        border-bottom: 4px solid #d08047;
+        }
+        a{
+        /* アニメーションの設定 */
+        /* 状態の移り変わりを設定できる 0.3秒遅くする */ 
+        transition: 0.3s;
+        }

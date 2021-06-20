@@ -16,7 +16,9 @@ class CreatePhotosTable extends Migration
         Schema::create('photos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('post_id');
-            $table->string('photo_url');//画像をファイルに入れる ファイルまでのパス
+            //画像をファイルに入れる ファイルまでのパス
+            // nullを許容するにはnullable()を使用 NULL値設定可能(nullable)
+            $table->string('photo_url')->nullable();
             $table->timestamps();
             
             // 外部キー制約 存在しない投稿には画像がつかない　 onDelete('cascade')=一緒にpostが削除
